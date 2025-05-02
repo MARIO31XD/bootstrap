@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BOOTSTRAP</title>
+
+	<style type="text/css">
+
+  	.container-fluid{
+  		border-bottom:2px solid black;
+  		background-image: url(casa.jpg);
+
+  	}
+
+    .col-sm-12{
+    	height: 300px;
+    	background-color: #555;
+    	margin-top: 50px;
+    }  
+      .col-sm-3{
+      	height: 300px;
+      	background-color: #999;
+        margin-top: 50px;
+        border:5px solid white;
+      }
+      
+      .col-sm-4{
+      	height: 300px;
+      	background-color: #555;
+      	margin-top: 50px;
+      	border: 5px solid white;
+      }
+      .col-sm-8{ height: 300px;
+      	background-color: #555;
+      	margin-top: 50px;
+      	border: 5px solid white;
+
+      }
+      .col-sm-2{
+      	height: 300px;
+      	background-color: #555;
+      	margin-top: 50px;
+      	border: 5px solid white;
+      }
+      .col-sm-1{
+      	height: 300px;
+      	background-color: #333;
+      	margin-top: 50px;
+      	border: 5px solid white;
+      }
+      #imagen1{
+      	background-image: url(goku1.jpg);
+      	transition: 3s;
+
+      }
+      #imagen1:hover{
+      	
+      	filter: invert(50%);
+
+      }
+      #imagen2{
+      	background-image: url(goku2.jpg);
+      	transition: 2s;
+      }
+      #imagen2:hover{
+      	filter: hue-rotate(90deg);
+      }
+      #imagen3{
+      	background-image: url(goku3.jpg);
+      	transition: 2s;
+      }
+      #imagen3:hover{
+      	             
+      filter: blur(10px);
+
+      }
+      #imagen4{
+      	background-image: url(goku4.jpg);
+      	transition: 2s;
+      }
+      #imagen4:hover{
+          rotate: 45deg;
+
+      }
+      #imagen5{
+      	background-image: url(goku5.jpg);
+      	transition: 2s;
+      	
+      }
+      #imagen5:hover{
+      	background-image: url(ozaru.jpg);
+      	             background-repeat: no-repeat;
+      z-index: 9999; 
+
+
+      }
+      #imagen6{
+      	background-image: url(goku7.jpg);
+      	transition: 3s;
+      }
+      #imagen6:hover{
+      	rotate: 90deg;
+      }
+      #imagen7{
+      	background-image: url(goku8.jpg);
+        transition: 2s;
+
+      }
+      #imagen7:hover{
+      	filter: brightness(1.8);
+      }
+      #imagen8{
+      	background-image: url(goku6.jpg);
+      	transition: 2s;
+      	
+      }
+      #imagen8:hover{
+      	filter: brightness(2.8);
+
+      }
+      #imagen9{
+      	background-image: url(goku9.jpg);
+      	transition: 2s;
+      }
+      #imagen9:hover{
+      	filter: saturate(100%);
+      }
+      #imagen10{
+      	background-image: url(goku10.jpg);
+      	transition: 2s;
+      }
+      #imagen10:hover{
+      	filter: saturate(100%);
+      }
+      #imagen11{
+      	background-image: url(goku11.jpg);
+      	transition: 2s;
+      }
+      #imagen11:hover{
+           filter: blur(5px);
+      }
+      #imagen12{
+      	background-image: url(goku12.jpg);
+      	transition: 2s;
+      }
+      #imagen12:hover{
+      	filter:brightness(2);
+      }
+      #imagen13{
+      	background-image: url(goku13.jpg);
+      	transition: 2s;
+      }
+      #imagen13:hover{
+      	filter: brightness(2);
+      }
+      #imagen14{
+      	background-image: url(goku14.jpg);
+      	transition: 2s;
+      }
+      #imagen14:hover{
+      	filter: brightness(2);
+      }
+      #imagen15{
+      	background-image: url(goku110.jpg);
+      	transition: 2s;
+      }
+
+      #imagen15:hover{
+      	filter: brightness(2);
+      }
+      #imagen16{background-image: url(gokublue.jpg);
+                 transition: 2s;
+      }
+      #imagen16:hover{filter: brightness(2);
+
+      }
+      #imagen17{background-image: url(gokugod.jpg);
+                transition: 2s;
+      }
+      #imagen17:hover{
+      	filter: brightness(2);
+      }
+      #imagen18{background-image: url(gokussj.jpg);
+            transition: 2s;
+      }
+      #imagen18:hover{
+      	filter: brightness(2);
+      }
+      #imagen19{background-image: url(gokussj3.jpg);
+             transition: 2s;
+      }
+      #imagen:hover{
+      	filter: brightness(2);
+      }
+      #imagen20{background-image: url(gokussj5.jpg);
+            transition: 2s;
+      }
+      #imagen20:hover{
+      	filter: brightness(2);
+      }
+      #imagen21{background-image: url(gokuwhite.jpg);
+             transition: 2s;
+      }
+      #imagen21:hover{
+      	filter: brightness(2);
+      }
+      #imagen22{background-image: url(kakarot.jpg);
+              transition: 2s;
+      }
+      #imagen22:hover{
+      	filter: brightness(2);
+      }
+      #imagen23{
+      	background-image: url(songoku.jpg);
+      	transition: 2s;
+      }
+      #imagen23:hover{
+      	filter: brightness(2);
+      }
+      #imagen24{background-image: url(ssj.jpg);
+      	transition: 2s;
+
+      }
+      #imagen24:hover{
+      	filter: brightness(2);
+      }
+      #imagen25{background-image: url(ssj2.jpg);
+      	transition: 2s;
+
+      }
+      #imagen25:hover{
+      	filter: brightness(2);
+      }
+      #imagen26{background-image: url(ssj4.jpg);
+      	transition: 2s;
+
+
+      }
+      #imagen26:hover{
+      	filter: brightness(2);
+      }
+      #imagen0{
+      	background-image: url(db.jpg);
+      	transition: 2s;
+      }
+      #imagen0:hover{
+      	filter: brightness(2);
+      	z-index: 9999;
+
+      }
+      
+      	
+        
+      
+      #titulo1{font-family: Saiyan Sans;
+      	       Color:red;
+      	       font-size: 100px;
+      	       padding-top: 50px;
+
+      }
+      #titulo2{
+      	font-family: Saiyan Sans;
+      	Color:red;
+      	font-size: 100px;
+       padding-top: 50px;
+      }
+      #titulo3{
+      	font-family: Saiyan Sans;
+      	color: darkred;
+      	font-size: 100px;
+      	padding-top: 50px;
+      }
+      #titulo4{
+      	font-family: Saiyan Sans;
+      	color: darkred;
+      	font-size: 80px;
+      	padding-top: 50px;
+      }
+      #titulo5{
+      	font-family: Saiyan Sans;
+      	color: red;
+      	font-size: 80px;
+      	padding-top: 50px;
+      }
+      #titulo6{
+      	font-family: Saiyan Sans;
+      	color: darkred;
+      	font-size: 80px;
+      	padding-top: 50px;
+      }
+      .texto1{
+      	background-color: white;
+      	border: 1px solid black;
+      	color: #555;
+      	width: 300px;
+      	margin-top: 292px;
+
+      }
+      .texto2{
+      	background-color: white;
+      	border: 1px solid black;
+      	color: #555;
+      	width: 300px;
+      	margin-top: 292px;
+      }
+      .texto3{
+      	background-color: white;
+      	border: 1px solid black;
+      	color: #555;
+      	width: 300px;
+      	margin-top: 292px;
+      }
+      .texto4{
+      	background-color: white;
+      	border: 1px solid black;
+      	color: #555;
+      	width: 300px;
+      	margin-top: 292px;
+      }
+      .texto5{
+      	background-color: white;
+      	border: 1px solid black;
+      	color: #555;
+      	width: 400px;
+      	margin-top: 292px;
+      }
+      .texto6{
+      	background-color: white;
+      	border: 1px solid black;
+      	color: #555;
+      	width: 800px;
+      	margin-top: 292px;
+      }
+      .texto7{
+      	background-color: white;
+      	border: 1px solid black;
+      	color: #555;
+      	width: 800px;
+      	margin-top: 292px;
+      }
+      .texto8{
+      	background-color: white;
+      	border: 1px solid black;
+      	color: #555;
+      	width: 400px;
+      	margin-top: 292px;
+      }
+      
+      .texto9{
+      	background-color: white;
+      	border: 1px solid black;
+      	color: #555;
+      	width: 200px;
+      	margin-top: 292px;
+      }
+      .texto10{
+      	background-color: white;
+      	border: 1px solid black;
+      	color: #555;
+      	width: 200px;
+      	margin-top: 292px;
+      }
+      .texto11{
+      	background-color: white;
+      	border: 1px solid black;
+      	color: #555;
+      	width: 200px;
+      	margin-top: 292px;
+      }
+      .texto12{
+      	background-color: white;
+      	border: 1px solid black;
+      	color: #555;
+      	width: 200px;
+      	margin-top: 292px;
+      }
+      .texto13{
+      	background-color: white;
+      	border: 1px solid black;
+      	color: #555;
+      	width: 200px;
+      	margin-top: 292px;
+      }
+      .texto14{
+      	background-color: white;
+      	border: 1px solid black;
+      	color: #555;
+      	width: 200px;
+      	margin-top: 292px;
+      }
+      .texto15{
+      	background-color: white;
+      	border: 1px solid black;
+      	color: #555;
+      	width: 85px;
+      	margin-top: 292px;
+      }
+      .texto16{
+      	background-color: white;
+      	border: 1px solid black;
+      	color: blue;
+      	width: 85px;
+      	margin-top: 292px;
+      }
+      .texto17{
+      	background-color: white;
+      	border: 1px solid black;
+      	color: darkred;
+      	width: 85px;
+      	margin-top: 292px;
+      }
+      .texto18{
+      	background-color: white;
+      	border: 1px solid black;
+      	color: #555;
+      	width: 85px;
+      	margin-top: 292px;
+      }
+      .texto19{
+      	background-color: white;
+      	border: 1px solid black;
+      	color: #555;
+      	width: 85px;
+      	margin-top: 292px;
+      }
+      .texto20{
+      	background-color: white;
+      	border: 1px solid black;
+      	color: #555;
+      	width: 85px;
+      	margin-top: 292px;
+      }
+      .texto21{
+      	background-color: white;
+      	border: 1px solid black;
+      	color: #555;
+      	width: 85px;
+      	margin-top: 292px;
+      }
+      .texto22{
+      	background-color: white;
+      	border: 1px solid black;
+      	color: #555;
+      	width: 85px;
+      	margin-top: 292px;
+      }
+      .texto23{
+      	background-color: white;
+      	border: 1px solid black;
+      	color: #555;
+      	width: 85px;
+      	margin-top: 292px;
+      }
+      .texto24{
+      	background-color: white;
+      	border: 1px solid black;
+      	color: #555;
+      	width: 85px;
+      	margin-top: 292px;
+      }
+      .texto25{
+      	background-color: white;
+      	border: 1px solid black;
+      	color: #555;
+      	width: 85px;
+      	margin-top: 292px;
+      }
+      .texto26{
+      	background-color: white;
+      	border: 1px solid black;
+      	color: #555;
+      	width: 85px;
+      	margin-top: 292px;
+      }
+      .inicio{
+      	background-color: white;
+      	border: 1px solid black;
+      	color: #555;
+      	width: 1300px;
+      	margin-top: 1px;
+
+      }
+      /*MENU*/
+      img{
+      	width: 300px;
+      	height: 100px;
+       padding-top: -50px;
+
+       padding left: 20px 10px;
+
+
+
+      	
+      }
+      #menu{
+      	float: right;
+      
+
+      }
+      #menu ul{
+      	
+      	
+      	padding-top: 20px;
+      	
+      
+
+      }
+      #menu ul li{
+      	display: inline;
+      	padding:  5px 8px 10px 15px;
+
+      }
+      #menu ul li a{
+      	text-decoration-line: none;
+      	font-size: 20px;
+     
+
+      }
+      #menu ul li a:hover{
+           color: darkred;
+      }
+      
+      
+  </style>
+</head>
+<body>
+
+
+<div class="container-fluid p-5 text-white text-center">
+<div class="logo">
+<img src="dragon.png">
+
+<nav id="menu">
+	<ul>
+		<li><a href="#titulo1">BOLA DE DRAC</a></li>
+		<li><a href="#titulo2">Goku Jove</a></li>
+    <li><a href="#titulo3">Kakarot</a></li>
+    <li><a href="#titulo4">Boles de Drac</a></li>
+    <li><a href="#titulo5">Aventures</a></li>
+    <li><a href="#titulo6">Transformacions</a></li>	
+  </ul>
+</nav>
+</div>
+</div>
+
+<div class="container text-center">
+
+       <div class="row text-center">
+       	<h1 id="titulo1">BOLA DE DRAC</h1>
+       	<div class="col-sm-12" id="imagen0"></div>
+       	<div class="inicio">Bola de Drac és un dels millors mangas de tota la història. I el més venut a tot el món.</div>
+  </div>    
+
+<div class="row text-center text-white">
+	<h1 id="titulo2">GOKU JOVE</h1>
+	<div class="col-sm-3" id="imagen1"><div class="texto1">En Son Goku damunt del núvol Kinton.</div></div>
+    <div class="col-sm-3" id="imagen2"><div class="texto2">Son Goku jove.</div></div>
+    <div class="col-sm-3" id="imagen3"><div class="texto3">Goku de petit.</div></div>
+    <div class="col-sm-3" id="imagen4"><div class="texto4">Goku és un experte de les arts marcials.</div></div>
+</div>
+
+<div class="row text-center text-white">
+	<h1 id="titulo3">KAKAROT</h1>
+	<div class="col-sm-4" id="imagen5"><div class="texto5">Goku és transforma en mico quan hi ha lluna plena.</div></div>
+	<div class="col-sm-8" id="imagen6"><div class="texto6">Goku pot volar gràcies als seus poders.</div></div>
+</div>
+
+<div class="row text-center text-white">
+	<h1 id="titulo4">GOKU I LES 7 BOLES DE DRAC</h1>
+	<div class="col-sm-8" id="imagen7"><div class="texto7">Des de petit Goku s'ha esforçat fins trobar les boles de drac.</div></div>
+	<div class="col-sm-4" id="imagen8"><div class="texto8">Salutació d'en Goku.</div></div>
+</div>
+
+<div class="row text-center text-white">
+	<h1 id="titulo5">LES AVENTURES DE'N SON GOKU</h1>
+	<div class="col-sm-2" id="imagen9"><div class="texto9">Goku Super Saiyan.</div></div>
+	<div class="col-sm-2" id="imagen10"><div class="texto10">Goku Super Saiyan 3.</div></div>
+	<div class="col-sm-2" id="imagen11"><div class="texto11">Goku al videojoc "Z KAKAROT".</div></div>
+	<div class="col-sm-2" id="imagen12"><div class="texto12">Personatges de Bola de Drac Z.</div></div>
+	<div class="col-sm-2" id="imagen13"><div class="texto13">Goku amb el seu fill Son Gohan.</div></div>
+	<div class="col-sm-2" id="imagen14"><div class="texto14">Bola de Drac Super.</div></div>
+</div>
+<div class="row text-center text-white">
+	<h1 id="titulo6">LES TRANSFORMACIONS DE GOKU</h1>
+	<div class="col-sm-1" id="imagen15"><div class="texto15">Saiyajin</div></div>
+	<div class="col-sm-1" id="imagen16"><div class="texto16">Goku blue</div></div>
+	<div class="col-sm-1" id="imagen17"><div class="texto17">Goku Déu</div></div>
+	<div class="col-sm-1" id="imagen18"><div class="texto18">SSJ 1</div></div>
+	<div class="col-sm-1" id="imagen19"><div class="texto19">SSJ3</div></div>
+	<div class="col-sm-1" id="imagen20"><div class="texto20">SSJ5</div></div>
+	<div class="col-sm-1" id="imagen21"><div class="texto21">Goku ultra instint</div></div>
+	<div class="col-sm-1" id="imagen22"><div class="texto22">Goku forma inicial</div></div>
+	<div class="col-sm-1" id="imagen23"><div class="texto23">Goku maligne</div></div>
+	<div class="col-sm-1" id="imagen24"><div class="texto24">SSJ2</div></div>
+	<div class="col-sm-1" id="imagen25"><div class="texto25">Super Saiyan</div></div>
+	<div class="col-sm-1" id="imagen26"><div class="texto26">SSJ4</div></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+</body>
+</html>
